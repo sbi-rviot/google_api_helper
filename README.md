@@ -46,28 +46,28 @@ tree = find_google_fileid_tree(service, fileId)
 Get folder id of a folder in Google Drive
 
   Arguments:
-    service: in order to use any of this library, the user needs to first build the service class using google ServiceAccountCredentials. see www.pypi.com for a full example.
+    service: in order to use any of this library, the user needs to first build the service class using google ServiceAccountCredentials.
     folder_name: name of the folder you wish to get the ID of.
 
 ### get_google_folders_in_folder(service, folder_id)
 Get a list of folders in a folder in Google Drive
 
   Arguments:
-    service: in order to use any of this library, the user needs to first build the service class using google ServiceAccountCredentials. see www.pypi.com for a full example.
+    service: in order to use any of this library, the user needs to first build the service class using google ServiceAccountCredentials.
     folder_id: id of the folder you wish to get the folders list of.
 
 ### get_google_files_in_folder(service, folder_id)
 Get a list of files and folders in a folder in Google Drive
 
   Arguments:
-    service: in order to use any of this library, the user needs to first build the service class using google ServiceAccountCredentials. see www.pypi.com for a full example.
+    service: in order to use any of this library, the user needs to first build the service class using google ServiceAccountCredentials.
     folder_id: id of the folder you wish to get the folders list of.
 
 ### uplaod_google_file(service, MediaFileUpload, parent_id, file_name)
 Upload a file in a folder in Google Drive
 
   Arguments:
-    service: in order to use any of this library, the user needs to first build the service class using google ServiceAccountCredentials. see www.pypi.com for a full example.
+    service: in order to use any of this library, the user needs to first build the service class using google ServiceAccountCredentials.
     MediaFileUpload: function of oauth2client.service_account. see www.pypi.com for a full example.
     parent_id: id of the folder you wish to get the folders list of.
     file_name: local path to the file. If the file is in the same folder as your script, then you should only enter here the name of your file.
@@ -76,5 +76,5 @@ Upload a file in a folder in Google Drive
 Find the folder tree of a file
 
   Arguments:
-    service: in order to use any of this library, the user needs to first build the service class using google ServiceAccountCredentials. see www.pypi.com for a full example.
+    service: in order to use any of this library, the user needs to first build the service class using google ServiceAccountCredentials.
     fileId: id of the file you wish to get the tree for.
