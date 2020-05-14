@@ -6,10 +6,17 @@ def get_google_folder_id(service, folder_name):
     folder_name: name of the folder you wish to get the ID of.
 
   """
-  for i in service.files().list().execute()['files']:
-    if i['name'] == folder_name and i['mimeType'] == 'application/vnd.google-apps.folder':
-      folder_id = i['id']
-      break
+  page_token = None
+  while True:
+    children = service.files().list(q="mimeType='application/vnd.google-apps.folder'", spaces='drive',fields='nextPageToken, files(id, name)').execute()
+    for i in children['files']:
+        print(i['name'])
+        if i['name'] == folder_name:
+            folder_id = i['id']
+            break
+    page_token = children.get('nextPageToken', None)
+    if page_token is None:
+        break
   return folder_id
 
 
