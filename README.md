@@ -1,4 +1,4 @@
-# google_api_helper - Automate your google drive process easily
+# google_api_v3_helper- Automate your google drive process easily
 Detailed usage documentation is still in progress
 The objective of this package is to help python developper to use some of the Google Drive API v3 easily.
 As of now, 5 functions are available. This package is embedding very nicely with Google API libraries.
@@ -6,7 +6,7 @@ As of now, 5 functions are available. This package is embedding very nicely with
 This is how you can install it on your machine:
 
 ```
-pip install google_api_helper
+pip install google_api_v3_helper
 ```
 
 All of the functionnalities of google_api_helper require you to build the the service class using google ServiceAccountCredentials.
@@ -35,8 +35,9 @@ service = get_service()
 Once set, you can use our library and get, for instance, the folder tree of a specific file as such:
 
 ```
+from google_api_v3_helper import find_google_fileid_tree
 fileId = 'XXXXXXXXXXX' #id of the file you wish to get the folder tree for.
-tree = find_fileid_tree(service, fileId)
+tree = find_google_fileid_tree(service, fileId)
 ```
 
 ## List of the functions available [last update: 5/14/2020]:
