@@ -39,9 +39,7 @@ fileId = 'XXXXXXXXXXX' #id of the file you wish to get the folder tree for.
 tree = find_fileid_tree(service, fileId)
 ```
 
-List of the functions available [last update: 5/14/2020]:
-
-## List of colors available
+##List of the functions available [last update: 5/14/2020]:
 
 ### get_google_folder_id(service, folder_name)
 Get folder id of a folder in Google Drive
