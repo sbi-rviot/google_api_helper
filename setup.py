@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name = 'google_api_v3_helper',
-    version = '0.6.dev0',
+    version = '0.7.dev0',
     author="Renaud Viot",
     author_email="renaud.viot@simply-bi.com",
     description = 'help python developper to use some of the Google Drive API v3 easily',

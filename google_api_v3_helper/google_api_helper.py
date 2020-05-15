@@ -10,7 +10,6 @@ def get_google_folder_id(service, folder_name):
   while True:
     children = service.files().list(q="mimeType='application/vnd.google-apps.folder'", spaces='drive',fields='nextPageToken, files(id, name)').execute()
     for i in children['files']:
-        print(i['name'])
         if i['name'] == folder_name:
             folder_id = i['id']
             break

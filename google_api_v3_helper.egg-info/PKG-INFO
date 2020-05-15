@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: google-api-v3-helper
-Version: 0.6.dev0
+Version: 0.7.dev0
 Summary: help python developper to use some of the Google Drive API v3 easily
 Home-page: https://github.com/sbi-rviot/google_api_helper
 Author: Renaud Viot
